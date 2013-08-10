@@ -1,0 +1,30 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Neil Grogans Site</title>
+  <link href="http://neil.grogan.ie/"/>
+  <link type="application/atom+xml" rel="self" href="http://neil.grogan.ie/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://neil.grogan.ie/</id>
+  <author>
+    <name>Neil Grogan</name>
+    <email>neil+atomfeed@grogan.ie</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://neil.grogan.ie{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://neil.grogan.ie{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Neil Grogan</name>
+      <uri>http://neil.grogan.ie/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
