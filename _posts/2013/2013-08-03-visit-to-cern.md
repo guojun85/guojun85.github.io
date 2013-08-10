@@ -3,7 +3,7 @@ layout: post
 title: "Visit to CERN"
 description: ""
 category: Science
-tags: []
+tags: [test]
 ---
 
 I am currently in Switzerland on a business trip. In between work, I managed to get some time over the Swiss national holiday to visit the <acronym title="European Nuclear Research Centre">CERN</acronym>. [CERN][] is world famous for the invention of <acronym title="World Wide Web">WWW</acronym> and of course most recently, the almost certainty that the [Higgs Boson][HIGGS] (<acronym title="also known as">aka</acronym>. "The God Particle") - the particle that gives energy mass - exists.
